@@ -7,6 +7,7 @@ Calculate the sentiment scores: The next step is to calculate the sentiment scor
 Interpret the results: The final step is to interpret the results of the sentiment analysis. This involves understanding the meaning of the sentiment scores and how they relate to the text.
 VADER is a lexicon- and rule-based sentiment analysis tool that is specifically designed to work with social media text. It is a free and open-source tool that can be used to analyze text in a variety of languages. VADER is a popular choice for sentiment analysis because it is easy to use and produces accurate results.
 ## Program:
+```
 import pandas as pd
 import vaderSentiment as vs
 
@@ -31,6 +32,7 @@ for text, sentiment_score in zip(texts, sentiment_scores):
     print("Negative:", sentiment_score['neg'])
     print("Neutral:", sentiment_score['neu'])
     print("Compound:", sentiment_score['compound'])
+```
 
 ## Output:
 
